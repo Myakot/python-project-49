@@ -10,3 +10,5 @@ package-install:
 brain-games:
 	python -m brain_games.scripts.brain_games
 
+lint:
+	poetry run flake8 brain_games
