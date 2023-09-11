@@ -8,5 +8,5 @@ package-install:
 	python3 -m pip install --user dist/*.whl
 
 brain-games:
-	poetry run brain-games
+	python -m brain_games.scripts.brain_games
 
