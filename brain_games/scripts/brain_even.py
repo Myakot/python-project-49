@@ -88,5 +88,9 @@ def brain_even_input():
 # --------------
 
 
-if __name__ == '__main__':
+def main():
     brain_even()
+
+
+if __name__ == '__main__':
+    main()
