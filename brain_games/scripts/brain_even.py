@@ -18,7 +18,8 @@ def brain_even_greet():
     name = input('May I have your name? ')
     print(f'Hello, {name}!')
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    # Нужно где-то указать правила игры, позже, если в задаче такое будет, особенно про 3 yes
+    # Нужно где-то указать правила игры, позже,
+    # если в задаче такое будет, особенно про 3 yes
 
 
 def brain_even_game():
@@ -59,7 +60,8 @@ def brain_even_answer_find():
 
 def brain_even_input():
     # Принятие ответа либо "yes" либо "no" - циклить
-    global user_answer  # Товарищ наставник - нужна помощь с global - это костыль, как лучше?
+    global user_answer
+    # Товарищ наставник - нужна помощь с global - это костыль, как лучше?
     print(f'Question: {gen_number}')
     user_answer = input('Your answer: ')
     if user_answer == 'yes' or user_answer == 'no':
@@ -72,7 +74,8 @@ def brain_even_input():
 # --------------
 # Не подходит под задачу: "Любой некорректный ввод считается ошибкой,
 # например, n, и равносилен неправильному ответу."
-# захотелось сразу сделать, чтобы тестировать было проще и если такая цель будет потом.
+# захотелось сразу сделать, чтобы тестировать
+# было проще и если такая цель будет потом.
 #     while True:
 #         print(f'Question: {gen_number}')
 #         user_answer = input('Your answer: ')
@@ -85,5 +88,4 @@ def brain_even_input():
 # --------------
 
 
-if __name__ == '__main__':
-    brain_even()
+brain_even()
