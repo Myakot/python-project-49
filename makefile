@@ -7,6 +7,9 @@ publish:
 package-install:
 	python3 -m pip install --user dist/*.whl
 
+install:
+	pip install --user --force-reinstall dist/*.whl
+
 brain-games:
 	poetry run brain-games
 
@@ -15,6 +18,9 @@ brain-even:
 
 brain-calc:
 	poetry run brain-calc
+
+brain-gcd:
+	poetry run brain-gcd
 
 lint:
 	poetry run flake8 brain_games

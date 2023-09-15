@@ -3,7 +3,7 @@ from random import randint
 
 
 def get_initial_randomized_number():
-    return randint(1, 10)
+    return randint(1, 500)
 
 
 def getting_user_answer():
