@@ -22,7 +22,7 @@ def main():
             counter += 1
         else:
             engine.show_correct_answer(user_answer, correct_answer, user_name)
-            return # Hard reset upon wrong answer
+            return  # Hard reset upon wrong answer
 
     if counter == 3:
         engine.return_win_end(user_name)
