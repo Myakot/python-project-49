@@ -35,22 +35,3 @@ def main():
 
     if counter == 3:
         engine.return_win_end(user_name)
-
-
-
-# brain-gcd
-#
-# Welcome to the Brain Games!
-# May I have your name? Sam
-# Hello, Sam!
-# Find the greatest common divisor of given numbers.
-# Question: 25 50
-# Your answer: 25
-# Correct!
-# Question: 100 52
-# Your answer: 4
-# Correct!
-# Question: 3 9
-# Your answer: 3
-# Correct!
-# Congratulations, Sam!
