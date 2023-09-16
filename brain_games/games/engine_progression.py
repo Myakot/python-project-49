@@ -38,7 +38,7 @@ def main():
         (sequence_question, answer) = question
         # print(f'DEBUG - UNPACKING ANSWER AND QUESTION')
         correct_answer = answer
-        print(f'Question: {sequence_question}')
+        print(f'Question: {sequence_question.strip()}')
         user_answer = engine.getting_user_answer()
         if str(correct_answer) == user_answer:
             print("Correct!\n")
