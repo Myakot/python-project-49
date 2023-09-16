@@ -9,3 +9,5 @@ brain_calc.py - https://asciinema.org/a/HO8jujkaPaxMsTa6n6xlrUJE1
 brain_gcd.py - https://asciinema.org/a/gmr7EBK62gAizWlMZvuMvav1Y
 
 brain_progression.py - https://asciinema.org/a/h66iVuZtR8cD0iZ6ITuPAzSLH
+
+brain_prime.py - https://asciinema.org/a/uFUCh15ToF9vj5hhg2YhpkZ95
