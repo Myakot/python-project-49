@@ -15,7 +15,7 @@ def main():
     while counter < 3:
         question = engine.get_initial_randomized_number()
         correct_answer = current_correct_answer(question)
-        print(f'Question: is {question} even')
+        print(f'Question: {question}')
         user_answer = engine.getting_user_answer()
         if correct_answer == user_answer:
             print("Correct!")
