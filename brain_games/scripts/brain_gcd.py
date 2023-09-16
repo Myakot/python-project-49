@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-from brain_games.game_engines.engine_gcd import main
+from brain_games.games.engine_gcd import main
 
 
 if __name__ == "__main__":

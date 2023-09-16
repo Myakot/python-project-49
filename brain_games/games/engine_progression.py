@@ -9,12 +9,12 @@ def question_answer_sequence(sequence):
     # print(f'DEBUG - INDEX CHOICE {i}')
     sequence_question = sequence[:i]+['..']+sequence[i+1:]
     # print(f'DEBUG - SEQUENCE_QUESTION = {sequence_question}')
-    print(f'DEBUG - QUESTION = {answer}')
+    # print(f'DEBUG - QUESTION = {answer}')
     return sequence_question, answer
 
 
 def current_sequence():
-    seq_length = randint(2, 7)
+    seq_length = randint(2, 7)  # Длина списка от 5 до 10-ти чисел
     # print(f'DEBUG SEQ_LENGTH = {seq_length}')
     seq_step = engine.get_initial_randomized_number()
     # print(f'DEBUG SEQUENCE STEP {seq_step}')

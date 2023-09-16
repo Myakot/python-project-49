@@ -1,9 +1,16 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Brain games. My first ever project"
 authors = ["Cherkasov Stepan <cstepan@yandex.ru>"]
 readme = "README.md"
+repository = "https://github.com/Myakot/python-project-49/"
+classifiers = [
+  "Private :: Do Not Upload",
+  "Natural Language :: English",
+  "Programming Language :: Python",
+  "Topic :: Education :: Testing"
+]
 packages = [
   { include = "brain_games" },
 ]

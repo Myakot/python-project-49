@@ -13,7 +13,7 @@ def current_correct_answer(num):
             correct_answer = 'yes'
     else:
         correct_answer = 'no'
-    print(f'DEBUG. correct-answer = {correct_answer}')
+    # print(f'DEBUG. correct-answer = {correct_answer}')
     # print(f'DEBUG, correct-answerTYPE = {type(correct_answer)}')
     return correct_answer
 

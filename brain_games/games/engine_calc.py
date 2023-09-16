@@ -2,21 +2,21 @@ from brain_games import cli, engine
 from random import choice
 
 
-def current_correct_answer(a, b, sign):
+def current_correct_answer(num1, num2, sign):
     if sign == '*':
-        correct_answer = str(a * b)
+        correct_answer = str(num1 * num2)
     elif sign == '-':
-        correct_answer = str(a - b)
+        correct_answer = str(num1 - num2)
     else:
-        correct_answer = str(a + b)
+        correct_answer = str(num1 + num2)
     return correct_answer
 
 
 def current_case():
-    a = engine.get_initial_randomized_number()
-    b = engine.get_initial_randomized_number()
+    num1 = engine.get_initial_randomized_number()
+    num2 = engine.get_initial_randomized_number()
     sign = choice(['+', '-', '*'])
-    return a, b, sign
+    return num1, num2, sign
 
 
 def main():
@@ -25,9 +25,9 @@ def main():
     counter = 0
     while counter < 3:
         question = current_case()
-        (a, b, sign) = question
-        correct_answer = current_correct_answer(a, b, sign)
-        print(f'Question: {a} {sign} {b}?')
+        (num1, num2, sign) = question
+        correct_answer = current_correct_answer(num1, num2, sign)
+        print(f'Question: {num1} {sign} {num2}?')
         user_answer = engine.getting_user_answer()
         if correct_answer == user_answer:
             print("Correct!\n")

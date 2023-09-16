@@ -10,9 +10,8 @@ def getting_user_answer():
     return prompt.string('Your answer: ')
 
 
-def show_correct_answer(user_answer, correct_answer, user_name):
-    print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-    # ^^ Линтер ругается на 8 лишних символов, стоит ли резать строку? Нечитаемо
+def show_correct_answer(us_ans, cor_ans, user_name):
+    print(f"'{us_ans}' is wrong answer ;(. Correct answer was '{cor_ans}'.")
     print(f"Let's try again, {user_name}!")
     return  # Hard reset / Program exit
 
