@@ -27,7 +27,7 @@ def main():
         question = current_case()
         (num1, num2, sign) = question
         correct_answer = current_correct_answer(num1, num2, sign)
-        print(f'Question: {num1} {sign} {num2}?')
+        print(f'Question: {num1} {sign} {num2}')
         user_answer = engine.getting_user_answer()
         if correct_answer == user_answer:
             print("Correct!\n")
