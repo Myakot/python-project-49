@@ -40,7 +40,7 @@ def main():
         correct_answer = answer
         print(f'Question: {sequence_question}')
         user_answer = engine.getting_user_answer()
-        if correct_answer == user_answer:
+        if str(correct_answer) == user_answer:
             print("Correct!\n")
             counter += 1
         else:
