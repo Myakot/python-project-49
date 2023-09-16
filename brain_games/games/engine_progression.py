@@ -8,6 +8,7 @@ def question_answer_sequence(sequence):
     i = sequence.index(answer)
     # print(f'DEBUG - INDEX CHOICE {i}')
     sequence_question = sequence[:i]+['..']+sequence[i+1:]
+    sequence_question = ' '.join(str(x) for x in sequence_question)
     # print(f'DEBUG - SEQUENCE_QUESTION = {sequence_question}')
     # print(f'DEBUG - QUESTION = {answer}')
     return sequence_question, answer
