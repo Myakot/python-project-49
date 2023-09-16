@@ -18,7 +18,7 @@ def main():
         print(f'Question: is {question} even')
         user_answer = engine.getting_user_answer()
         if correct_answer == user_answer:
-            print("Correct!\n")
+            print("Correct!")
             counter += 1
         else:
             engine.show_correct_answer(user_answer, correct_answer, user_name)
