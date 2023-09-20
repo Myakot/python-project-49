@@ -1,4 +1,8 @@
-from brain_games import engine
+from brain_games.engine import get_initial_randomized_number
+from brain_games.engine import welcome_get_name
+from brain_games.engine import getting_user_answer
+from brain_games.engine import show_correct_answer
+from brain_games.engine import return_win_end
 from random import choice
 
 
@@ -13,28 +17,28 @@ def current_correct_answer(num1, num2, sign):
 
 
 def current_case():
-    num1 = engine.get_initial_randomized_number()
-    num2 = engine.get_initial_randomized_number()
+    num1 = get_initial_randomized_number()
+    num2 = get_initial_randomized_number()
     sign = choice(['+', '-', '*'])
     return num1, num2, sign
 
 
 def main():
     print('What is the result of the expression?')
-    user_name = engine.welcome_get_name()
+    user_name = welcome_get_name()
     counter = 0
     while counter < 3:
         question = current_case()
         (num1, num2, sign) = question
         correct_answer = current_correct_answer(num1, num2, sign)
         print(f'Question: {num1} {sign} {num2}')
-        user_answer = engine.getting_user_answer()
+        user_answer = getting_user_answer()
         if correct_answer == user_answer:
             print("Correct!\n")
             counter += 1
         else:
-            engine.show_correct_answer(user_answer, correct_answer, user_name)
-            return  # Hard reset upon wrong answer
+            show_correct_answer(user_answer, correct_answer, user_name)
+            return
 
     if counter == 3:
-        engine.return_win_end(user_name)
+        return_win_end(user_name)
