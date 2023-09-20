@@ -9,7 +9,6 @@ def create_question_answer():
     num2 = randint(-100, 100)
     sign = choice(['+', '-', '*'])
     question = f'{num1} {sign} {num2}'
-    print(f'DEBUG, {question} = question')
 
     if sign == '*':
         correct_answer = str(num1 * num2)
@@ -17,5 +16,4 @@ def create_question_answer():
         correct_answer = str(num1 - num2)
     else:
         correct_answer = str(num1 + num2)
-    print(f'DEBUG, {correct_answer}, {question} = correct_answer, question IN ENGINE_CALC.PY')
     return correct_answer, question
