@@ -13,7 +13,7 @@ def is_prime(number):
 
 
 def create_question_answer():
-    number = randint(1, 11)
+    number = randint(1, 101)
     if is_prime(number) is True:
         correct_answer = 'yes'
     else:
