@@ -1,11 +1,13 @@
 from random import randint
 
 
-GAME_DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAME_DESCRIPTION = ('Answer "yes" if given number is prime.'
+                    ' Otherwise answer "no".')
 
 
 def create_question_answer():
     number = randint(1, 11)
+    print(len(GAME_DESCRIPTION))
     if number == 1:
         correct_answer = 'no'
     elif number > 1:
