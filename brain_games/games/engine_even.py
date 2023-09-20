@@ -1,4 +1,4 @@
-from brain_games import cli, engine
+from brain_games import engine
 
 
 def current_correct_answer(question):
@@ -10,7 +10,7 @@ def current_correct_answer(question):
 
 def main():
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    user_name = cli.welcome_get_name()
+    user_name = engine.welcome_get_name()
     counter = 0
     while counter < 3:
         question = engine.get_initial_randomized_number()

@@ -1,11 +1,9 @@
-from brain_games import cli, engine
+from brain_games import engine
 from math import gcd
 
 
 def current_correct_answer(num1, num2):
     correct_answer = str(int(gcd(num1, num2)))
-    # print(f'Помощь, чтобы не позориться: correct-answer = {correct_answer}')
-    # print(f'DEBUG, correct-answerTYPE = {type(correct_answer)}')
     return correct_answer
 
 
@@ -17,7 +15,7 @@ def current_case():
 
 def main():
     print('Find the greatest common divisor of given numbers.')
-    user_name = cli.welcome_get_name()
+    user_name = engine.welcome_get_name()
     counter = 0
     while counter < 3:
         question = current_case()
@@ -25,13 +23,11 @@ def main():
         correct_answer = current_correct_answer(num1, num2)
         print(f'Question: {num1} {num2}')
         user_answer = engine.getting_user_answer()
-        # print(f'DEBUG, USER-ANSWERTYPE = {type(user_answer)}')
         if correct_answer == user_answer:
             print("Correct!\n")
             counter += 1
         else:
             engine.show_correct_answer(user_answer, correct_answer, user_name)
-            return  # Hard reset upon wrong answer
 
     if counter == 3:
         engine.return_win_end(user_name)

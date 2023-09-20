@@ -1,4 +1,4 @@
-from brain_games import cli, engine
+from brain_games import engine
 from random import choice
 
 
@@ -21,7 +21,7 @@ def current_case():
 
 def main():
     print('What is the result of the expression?')
-    user_name = cli.welcome_get_name()
+    user_name = engine.welcome_get_name()
     counter = 0
     while counter < 3:
         question = current_case()
