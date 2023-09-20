@@ -1,5 +1,8 @@
-build: 
+build:
 	poetry build
+
+install:
+	poetry install
 
 publish:
 	poetry publish --dry-run
@@ -7,7 +10,7 @@ publish:
 package-install:
 	python3 -m pip install --user dist/*.whl
 
-install:
+reinstall:
 	pip install --user --force-reinstall dist/*.whl
 
 brain-games:

@@ -1,19 +1,19 @@
 from random import choice, randint
 
 
-GAME_DESC = 'What is the result of the expression?'
+GAME_DESCRIPTION = 'What is the result of the expression?'
 
 
 def create_question_answer():
-    num1 = randint(-100, 100)
-    num2 = randint(-100, 100)
+    number1 = randint(-100, 100)
+    number2 = randint(-100, 100)
     sign = choice(['+', '-', '*'])
-    question = f'{num1} {sign} {num2}'
+    question = f'{number1} {sign} {number2}'
 
     if sign == '*':
-        correct_answer = str(num1 * num2)
+        correct_answer = str(number1 * number2)
     elif sign == '-':
-        correct_answer = str(num1 - num2)
+        correct_answer = str(number1 - number2)
     else:
-        correct_answer = str(num1 + num2)
+        correct_answer = str(number1 + number2)
     return correct_answer, question

@@ -8,9 +8,9 @@ def welcome_get_name():
     return user_name
 
 
-def engine_main(game):  # Сюда возвращается correct_answer + question
+def engine_play(game):  # Сюда возвращается correct_answer + question
     user_name = welcome_get_name()
-    print(game.GAME_DESC)
+    print(game.GAME_DESCRIPTION)
     COUNTER = 0
     while COUNTER < 3:
         correct_answer, question = game.create_question_answer()
