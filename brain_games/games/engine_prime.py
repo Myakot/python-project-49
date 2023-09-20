@@ -5,18 +5,17 @@ GAME_DESCRIPTION = ('Answer "yes" if given number is prime.'
                     ' Otherwise answer "no".')
 
 
+def is_prime(number):
+    for element in range(2, int(number ** 1 / 2) + 1):
+        if number % element == 0:
+            return False
+    return True
+
+
 def create_question_answer():
     number = randint(1, 11)
-    print(len(GAME_DESCRIPTION))
-    if number == 1:
-        correct_answer = 'no'
-    elif number > 1:
-        for i in range(2, number):
-            if (number % i) == 0:
-                correct_answer = 'no'
-                break
-        else:
-            correct_answer = 'yes'
+    if is_prime(number) is True:
+        correct_answer = 'yes'
     else:
         correct_answer = 'no'
     return correct_answer, number
