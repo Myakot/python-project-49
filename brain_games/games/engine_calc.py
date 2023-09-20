@@ -1,7 +1,8 @@
 from random import choice, randint
+import brain_games.constants
 
 
-GAME_DESCRIPTION = 'What is the result of the expression?'
+desc = brain_games.constants.CALC
 
 
 def create_question_answer():

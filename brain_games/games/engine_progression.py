@@ -1,7 +1,8 @@
 from random import randint, choice
+import brain_games.constants
 
 
-GAME_DESCRIPTION = 'What number is missing in the progression?'
+desc = brain_games.constants.PROGRESSION
 
 
 def create_question_answer():

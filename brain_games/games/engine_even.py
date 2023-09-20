@@ -1,7 +1,8 @@
 from random import randint
+import brain_games.constants
 
 
-GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+desc = brain_games.constants.EVEN
 
 
 def create_question_answer():

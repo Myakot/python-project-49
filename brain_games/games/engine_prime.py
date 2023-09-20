@@ -1,8 +1,8 @@
 from random import randint
+import brain_games.constants
 
 
-GAME_DESCRIPTION = ('Answer "yes" if given number is prime.'
-                    ' Otherwise answer "no".')
+desc = brain_games.constants.PRIME
 
 
 def is_prime(number):

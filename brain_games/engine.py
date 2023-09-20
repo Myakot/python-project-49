@@ -1,4 +1,5 @@
 import prompt
+import brain_games.constants
 
 
 def welcome_get_name():
@@ -8,17 +9,16 @@ def welcome_get_name():
     return user_name
 
 
-def engine_play(game):  # Сюда возвращается correct_answer + question
+def engine_play(game):
     user_name = welcome_get_name()
-    print(game.GAME_DESCRIPTION)
-    COUNTER = 0
-    while COUNTER < 3:
+    print(game.desc)
+    while brain_games.constants.COUNTER < 3:
         correct_answer, question = game.create_question_answer()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
         if user_answer == correct_answer:
             print('Correct!')
-            COUNTER += 1
+            brain_games.constants.COUNTER += 1
         else:
             print(f'{user_answer} is wrong answer ;(.')
             print(f'Correct answer was {correct_answer}.')
