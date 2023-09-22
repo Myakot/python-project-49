@@ -1,5 +1,5 @@
 import prompt
-from .constants import COUNTER
+from .consts import COUNTER
 
 
 def engine_game_start(game):

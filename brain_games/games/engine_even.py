@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.constants import DESC_EVEN
+from brain_games.consts import DESC_EVEN
 
 
 def create_question_answer():

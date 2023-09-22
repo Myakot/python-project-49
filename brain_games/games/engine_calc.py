@@ -1,5 +1,5 @@
 from random import choice, randint
-from brain_games.constants import DESC_CALC
+from brain_games.consts import DESC_CALC
 
 
 def create_question_answer():

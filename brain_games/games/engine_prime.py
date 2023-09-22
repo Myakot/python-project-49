@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.constants import DESC_PRIME
+from brain_games.consts import DESC_PRIME
 
 
 def is_prime(number):

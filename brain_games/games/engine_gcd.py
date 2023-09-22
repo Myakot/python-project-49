@@ -1,6 +1,6 @@
 from random import randint
 from math import gcd
-from brain_games.constants import DESC_GCD
+from brain_games.consts import DESC_GCD
 
 
 def create_question_answer():

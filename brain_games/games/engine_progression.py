@@ -1,5 +1,6 @@
 from random import randint, choice
-from brain_games.constants import DESC_PROGRESSION
+from brain_games.consts import DESC_PROGRESSION
+from brain_games.consts import PROGRESSION_SEQUENCE_LENGTH
 
 
 def create_question_answer():
@@ -12,7 +13,7 @@ def create_question_answer():
 
 
 def create_sequence():
-    seq_length = randint(5, 10)
+    seq_length = PROGRESSION_SEQUENCE_LENGTH
     seq_step = randint(1, 100)
     sequence = [randint(1, 100)]
     iterator_x = 0
