@@ -2,15 +2,10 @@ import prompt
 import brain_games.constants
 
 
-def welcome_get_name():
+def engine_play(game):
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
-    return user_name
-
-
-def engine_play(game):
-    user_name = welcome_get_name()
     print(game.desc)
     while brain_games.constants.COUNTER < 3:
         correct_answer, question = game.create_question_answer()
