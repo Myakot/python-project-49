@@ -1,8 +1,8 @@
 from random import randint
-import brain_games.constants
+from brain_games.constants import DESC_GCD
 
 
-desc = brain_games.constants.PRIME
+desc = DESC_GCD
 
 
 def is_prime(number):

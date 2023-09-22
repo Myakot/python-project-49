@@ -1,9 +1,9 @@
 from random import randint
 from math import gcd
-import brain_games.constants
+from brain_games.constants import DESC_GCD
 
 
-desc = brain_games.constants.GCD
+desc = DESC_GCD
 
 
 def create_question_answer():

@@ -1,8 +1,5 @@
 from random import randint
-import brain_games.constants
-
-
-desc = brain_games.constants.EVEN
+from brain_games.constants import DESC_EVEN
 
 
 def create_question_answer():
@@ -12,3 +9,8 @@ def create_question_answer():
     else:
         correct_answer = 'no'
     return correct_answer, question
+
+
+def print_game_desc():
+    desc = DESC_EVEN
+    print(desc)
