@@ -2,9 +2,6 @@ from random import choice, randint
 from brain_games.constants import DESC_CALC
 
 
-desc = DESC_CALC
-
-
 def create_question_answer():
     number1 = randint(-100, 100)
     number2 = randint(-100, 100)
@@ -18,3 +15,8 @@ def create_question_answer():
     else:
         correct_answer = str(number1 + number2)
     return correct_answer, question
+
+
+def print_game_desc():
+    desc = DESC_CALC
+    print(desc)

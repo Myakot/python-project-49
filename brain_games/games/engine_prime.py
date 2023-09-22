@@ -1,8 +1,5 @@
 from random import randint
-from brain_games.constants import DESC_GCD
-
-
-desc = DESC_GCD
+from brain_games.constants import DESC_PRIME
 
 
 def is_prime(number):
@@ -19,3 +16,8 @@ def create_question_answer():
     else:
         correct_answer = 'no'
     return correct_answer, number
+
+
+def print_game_desc():
+    desc = DESC_PRIME
+    print(desc)

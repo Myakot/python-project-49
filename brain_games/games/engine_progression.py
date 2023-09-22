@@ -1,8 +1,5 @@
 from random import randint, choice
-from brain_games.constants import DESC_GCD
-
-
-desc = DESC_GCD
+from brain_games.constants import DESC_PROGRESSION
 
 
 def create_question_answer():
@@ -23,3 +20,8 @@ def create_sequence():
         sequence.append(sequence[iterator_x] + seq_step)
         iterator_x += 1
     return sequence
+
+
+def print_game_desc():
+    desc = DESC_PROGRESSION
+    print(desc)
