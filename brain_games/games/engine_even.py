@@ -1,13 +1,10 @@
-from random import randint
 from brain_games.consts import DESC_EVEN
+from brain_games.utils import random_num
 
 
 def create_question_answer():
-    question = randint(0, 100)
-    if question % 2 == 0:
-        correct_answer = 'yes'
-    else:
-        correct_answer = 'no'
+    question = random_num()
+    correct_answer = 'yes' if question % 2 == 0 else 'no'
     return correct_answer, question
 
 

@@ -1,9 +1,11 @@
-from random import randint, choice
+from random import choice
 from brain_games.consts import DESC_PROGRESSION
 from brain_games.consts import PROGRESSION_SEQUENCE_LENGTH
+from brain_games.utils import random_num
 
 
 def create_question_answer():
+    # Создание правильного ответа + вопроса
     sequence = create_sequence()
     correct_answer = choice(sequence)
     index_s = sequence.index(correct_answer)
@@ -13,13 +15,13 @@ def create_question_answer():
 
 
 def create_sequence():
+    # Создание последовательности
     seq_length = PROGRESSION_SEQUENCE_LENGTH
-    seq_step = randint(1, 100)
-    sequence = [randint(1, 100)]
-    iterator_x = 0
-    while iterator_x <= seq_length:
-        sequence.append(sequence[iterator_x] + seq_step)
-        iterator_x += 1
+    seq_step, sequence_start = random_num(), random_num()
+    sequence = []
+    for index in range(seq_length):
+        sequence_start += seq_step
+        sequence.append(sequence_start)
     return sequence
 
 

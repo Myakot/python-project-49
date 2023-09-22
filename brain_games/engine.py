@@ -16,9 +16,8 @@ def engine_game_start(game):
             print('Correct!')
             counter += 1
         else:
-            print(f'\'{user_answer}\' is wrong answer ;(. '
-                  f'Correct answer was \'{correct_answer}\'.'
+            print(f'{user_answer} is wrong answer ;(. '
+                  f'Correct answer was {correct_answer}.'
                   f"\nLet's try again, {user_name}!")
-
             return
     print(f'Congratulations, {user_name}!')

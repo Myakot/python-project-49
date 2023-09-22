@@ -1,14 +1,13 @@
-from random import randint
 from math import gcd
 from brain_games.consts import DESC_GCD
+from brain_games.utils import random_num
 
 
 def create_question_answer():
-    number1 = randint(1, 100)
-    number2 = randint(1, 100)
+    number1 = random_num()
+    number2 = random_num()
     correct_answer = str(gcd(number1, number2))
     question = f'{number1} {number2}'
-
     return correct_answer, question
 
 
