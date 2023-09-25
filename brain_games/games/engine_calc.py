@@ -1,6 +1,7 @@
 from random import choice
 from brain_games.consts import DESC_CALC
 from brain_games.utils import random_num
+from brain_games.engine import engine_game_start
 
 
 def create_question_answer():
@@ -13,15 +14,15 @@ def create_question_answer():
 
 
 def check_for_answer(number1, sign, number2):
-    if sign == '*':
-        correct_answer = str(number1 * number2)
-    elif sign == '-':
-        correct_answer = str(number1 - number2)
-    else:
-        correct_answer = str(number1 + number2)
+    match sign:
+        case '*':
+            correct_answer = str(number1 * number2)
+        case '-':
+            correct_answer = str(number1 - number2)
+        case '+':
+            correct_answer = str(number1 + number2)
     return correct_answer
 
 
-def print_game_desc():
-    desc = DESC_CALC
-    print(desc)
+def run_calc_game():
+    engine_game_start(DESC_CALC, create_question_answer)

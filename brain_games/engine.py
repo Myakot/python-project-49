@@ -2,14 +2,14 @@ import prompt
 from .consts import COUNTER
 
 
-def engine_game_start(game):
+def engine_game_start(desc, create_question_answer):
     counter = COUNTER
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
-    game.print_game_desc()
+    print(desc)
     while counter < 3:
-        correct_answer, question = game.create_question_answer()
+        correct_answer, question = create_question_answer()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
         if user_answer == correct_answer:

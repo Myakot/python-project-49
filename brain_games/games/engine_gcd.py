@@ -1,6 +1,7 @@
 from math import gcd
 from brain_games.consts import DESC_GCD
 from brain_games.utils import random_num
+from brain_games.engine import engine_game_start
 
 
 def create_question_answer():
@@ -11,6 +12,5 @@ def create_question_answer():
     return correct_answer, question
 
 
-def print_game_desc():
-    desc = DESC_GCD
-    print(desc)
+def run_gcd_game():
+    engine_game_start(DESC_GCD, create_question_answer)
