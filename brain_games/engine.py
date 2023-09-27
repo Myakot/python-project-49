@@ -1,8 +1,5 @@
 import prompt
-from .consts import COUNTER
-# Лучше импортировать с полным указанием пути, а не через точку
-# from .consts import COUNTER
-
+from brain_games.consts import COUNTER
 
 
 # Вот тут некоторые принты можно объединить, и проход
