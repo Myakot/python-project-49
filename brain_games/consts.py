@@ -1,4 +1,8 @@
 # File that has all of project's constants
+
+# Наименование связано с прошлым комментарием.
+# Так же думаю излишний комментарий про константы, тк мы
+# и так файл этот назвали говоряще)
 COUNTER = 0
 PROGRESSION_SEQUENCE_LENGTH = 10
 DESC_CALC = 'What is the result of the expression?'
