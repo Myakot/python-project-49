@@ -3,7 +3,8 @@ from brain_games.consts import TASK_CALC
 from brain_games.utils import generate_num
 from brain_games.engine import engine_game_start
 
-# Продумать именнование функций - спрашивая (что они делают? Они возвращают то, то)
+# Продумать именнование функций - спрашивая (что
+# они делают? Они возвращают то, то)
 
 # Такие строчки, можно описать в одну строчку:
 #     number1 = random_num()
@@ -11,6 +12,7 @@ from brain_games.engine import engine_game_start
 
 # Тут стоит подумать над оптимизацией в целом:
 # Можно подумать над оптимизацией и читаемости кода:
+
 
 def create_question_answer():
     number1 = generate_num()
