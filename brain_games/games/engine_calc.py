@@ -3,9 +3,6 @@ from brain_games.consts import TASK_CALC
 from brain_games.utils import generate_num
 from brain_games.engine import engine_game_start
 
-# Тут стоит подумать над оптимизацией в целом:
-# Можно подумать над оптимизацией и читаемости кода:
-
 
 def give_question_answer():
     number1, number2 = generate_num(), generate_num()
