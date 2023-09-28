@@ -1,5 +1,4 @@
 from prompt import string
-from brain_games.consts import ATTEMPT_COUNTER
 from brain_games.consts import TO_WIN
 
 
@@ -12,14 +11,12 @@ def engine_game_start(task_description, give_question_answer):
 
 
 def play_rounds(give_question_answer, user_name):
-    counter = ATTEMPT_COUNTER
-    while counter < TO_WIN:
+    for ATTEMPT_COUNTER in range(TO_WIN):
         correct_answer, question = give_question_answer()
         print(f'Question: {question}')
         user_answer = string('Your answer: ')
         if user_answer == correct_answer:
             print('Correct!')
-            counter += 1
         else:
             print(f'{user_answer} is wrong answer ;(. '
                   f'Correct answer was {correct_answer}.'

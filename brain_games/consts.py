@@ -1,4 +1,3 @@
-ATTEMPT_COUNTER = 0
 TO_WIN = 3
 PROGRESSION_SEQUENCE_LENGTH = 10
 TASK_CALC = 'What is the result of the expression?'
