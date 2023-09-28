@@ -4,7 +4,7 @@ from brain_games.utils import generate_num
 from brain_games.engine import engine_game_start
 
 
-def create_question_answer():
+def give_question_answer():
     correct_answer, number1, number2 = check_gcd()
     question = f'{number1} {number2}'
     return correct_answer, question
@@ -17,4 +17,4 @@ def check_gcd():
 
 
 def run_gcd_game():
-    engine_game_start(TASK_GCD, create_question_answer)
+    engine_game_start(TASK_GCD, give_question_answer)

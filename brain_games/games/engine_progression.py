@@ -5,7 +5,7 @@ from brain_games.utils import generate_num
 from brain_games.engine import engine_game_start
 
 
-def create_question_answer():
+def give_question_answer():
     # Создание правильного ответа + вопроса
     sequence = create_sequence()
     correct_answer = choice(sequence)
@@ -27,4 +27,4 @@ def create_sequence():
 
 
 def run_progression_game():
-    engine_game_start(TASK_PROGRESSION, create_question_answer)
+    engine_game_start(TASK_PROGRESSION, give_question_answer)
