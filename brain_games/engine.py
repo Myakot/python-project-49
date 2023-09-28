@@ -1,24 +1,18 @@
 import prompt
-from brain_games.consts import COUNTER
-
+from brain_games.consts import ATTEMPT_COUNTER
+from brain_games.consts import TO_WIN
 
 # Вот тут некоторые принты можно объединить, и проход
 # по раундам игры сделать через for - чтобы не исменять константу:
 
-# Так же сюда относиться название COUNTER - не совсем понятно,
-# что за счётчик, нужно назвать более описательно, так же осталась
-# конструкция while counter < 3: , где присутствует "магическое" число
 
-# Слово desc часто используется в качестве направления
-# сортировки, поэтому стоит переименовать
-
-def engine_game_start(desc, create_question_answer):
-    counter = COUNTER
+def engine_game_start(task_description, create_question_answer):
+    counter = ATTEMPT_COUNTER
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
-    print(desc)
-    while counter < 3:
+    print(task_description)
+    while counter < TO_WIN:
         correct_answer, question = create_question_answer()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')

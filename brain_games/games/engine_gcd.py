@@ -1,5 +1,5 @@
 from math import gcd
-from brain_games.consts import DESC_GCD
+from brain_games.consts import TASK_GCD
 from brain_games.utils import generate_num
 from brain_games.engine import engine_game_start
 
@@ -15,4 +15,4 @@ def create_question_answer():
 
 
 def run_gcd_game():
-    engine_game_start(DESC_GCD, create_question_answer)
+    engine_game_start(TASK_GCD, create_question_answer)

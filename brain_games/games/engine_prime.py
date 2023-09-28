@@ -1,4 +1,4 @@
-from brain_games.consts import DESC_PRIME
+from brain_games.consts import TASK_PRIME
 from brain_games.utils import generate_num
 from brain_games.engine import engine_game_start
 
@@ -17,4 +17,4 @@ def create_question_answer():
 
 
 def run_prime_game():
-    engine_game_start(DESC_PRIME, create_question_answer)
+    engine_game_start(TASK_PRIME, create_question_answer)
