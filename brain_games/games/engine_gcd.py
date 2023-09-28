@@ -5,13 +5,15 @@ from brain_games.engine import engine_game_start
 
 
 def create_question_answer():
-    number1 = generate_num()
-    number2 = generate_num()
-    # Тут вынести функцию проверки числа
-
-    correct_answer = str(gcd(number1, number2))
+    correct_answer, number1, number2 = check_gcd()
     question = f'{number1} {number2}'
     return correct_answer, question
+
+
+def check_gcd():
+    number1, number2 = generate_num(), generate_num()
+    correct_answer = str(gcd(number1, number2))
+    return correct_answer, number1, number2
 
 
 def run_gcd_game():

@@ -5,10 +5,13 @@ from brain_games.engine import engine_game_start
 
 def create_question_answer():
     question = generate_num()
-    # Тут вынести функцию проверки числа на чётность
+    сorrect_answer = check_even(question)
+    return сorrect_answer, question
 
+
+def check_even(question):
     correct_answer = 'yes' if question % 2 == 0 else 'no'
-    return correct_answer, question
+    return correct_answer
 
 
 def run_even_game():
