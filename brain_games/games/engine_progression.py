@@ -1,7 +1,7 @@
 from random import choice
-from brain_games.consts import TASK_PROGRESSION
+from brain_games.consts import GAME_GREET_PROGRESSION
 from brain_games.consts import PROGRESSION_SEQUENCE_LENGTH
-from brain_games.utils import generate_num
+from brain_games.utils import get_random_num
 from brain_games.engine import engine_game_start
 
 
@@ -18,7 +18,7 @@ def give_question_answer():
 def create_sequence():
     # Создание последовательности
     seq_length = PROGRESSION_SEQUENCE_LENGTH
-    seq_step, sequence_start = generate_num(), generate_num()
+    seq_step, sequence_start = get_random_num(), get_random_num()
     sequence = []
     for index in range(seq_length):
         sequence_start += seq_step
@@ -27,4 +27,4 @@ def create_sequence():
 
 
 def run_progression_game():
-    engine_game_start(TASK_PROGRESSION, give_question_answer)
+    engine_game_start(GAME_GREET_PROGRESSION, give_question_answer)

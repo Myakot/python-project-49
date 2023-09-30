@@ -3,5 +3,5 @@ from random import randint
 
 
 # Used to simply generate numbers for tasks
-def generate_num():
+def get_random_num():
     return randint(1, 101)
