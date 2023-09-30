@@ -1,4 +1,4 @@
-from brain_games.consts import GAME_GREET_PRIME
+from brain_games.consts import GAME_GRT_PRIME
 from brain_games.utils import get_random_num
 from brain_games.engine import engine_game_start
 
@@ -17,4 +17,4 @@ def is_prime(number):
 
 
 def run_prime_game():
-    engine_game_start(GAME_GREET_PRIME, give_question_answer)
+    engine_game_start(GAME_GRT_PRIME, give_question_answer)
