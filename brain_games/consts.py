@@ -1,4 +1,4 @@
-WIN_COUNTER = 3
+NUM_OF_GAMES = 3
 PROGRESSION_SEQUENCE_LENGTH = 10
 GAME_GREET_CALC = 'What is the result of the expression?'
 GAME_GREET_EVEN = 'Answer "yes" if the number is even, otherwise answer "no".'

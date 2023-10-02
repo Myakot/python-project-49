@@ -4,7 +4,7 @@ from brain_games.utils import get_random_num
 from brain_games.engine import engine_game_start
 
 
-def give_question_answer():
+def give_question_and_answer():
     number1, number2 = get_random_num(), get_random_num()
     sign = choice(['+', '-', '*'])
     question = f'{number1} {sign} {number2}'
@@ -24,4 +24,4 @@ def check_for_answer(number1, sign, number2):
 
 
 def run_calc_game():
-    engine_game_start(GAME_GREET_CALC, give_question_answer)
+    engine_game_start(GAME_GREET_CALC, give_question_and_answer)

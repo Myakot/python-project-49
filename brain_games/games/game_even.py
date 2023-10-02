@@ -3,7 +3,7 @@ from brain_games.utils import get_random_num
 from brain_games.engine import engine_game_start
 
 
-def give_question_answer():
+def give_question_and_answer():
     question = get_random_num()
     сorrect_answer = check_even(question)
     return сorrect_answer, question
@@ -15,4 +15,4 @@ def check_even(question):
 
 
 def run_even_game():
-    engine_game_start(GAME_GREET_EVEN, give_question_answer)
+    engine_game_start(GAME_GREET_EVEN, give_question_and_answer)
