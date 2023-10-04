@@ -1,7 +1,7 @@
 from random import choice
 from brain_games.consts import GAME_GREET_CALC
 from brain_games.utils import get_random_num
-from brain_games.engine import engine_game_start
+from brain_games.engine import run_game
 
 
 def get_question_and_answer():
@@ -24,4 +24,4 @@ def check_for_answer(number1, sign, number2):
 
 
 def run_calc_game():
-    engine_game_start(GAME_GREET_CALC, get_question_and_answer)
+    run_game(GAME_GREET_CALC, get_question_and_answer)

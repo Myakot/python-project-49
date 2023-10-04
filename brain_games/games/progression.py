@@ -2,7 +2,7 @@ from random import choice
 from brain_games.consts import GAME_GREET_PROGRESSION
 from brain_games.consts import PROGRESSION_SEQUENCE_LENGTH
 from brain_games.utils import get_random_num
-from brain_games.engine import engine_game_start
+from brain_games.engine import run_game
 
 
 def get_progression_and_missing_num():
@@ -27,4 +27,4 @@ def create_sequence():
 
 
 def run_progression_game():
-    engine_game_start(GAME_GREET_PROGRESSION, get_progression_and_missing_num)
+    run_game(GAME_GREET_PROGRESSION, get_progression_and_missing_num)
