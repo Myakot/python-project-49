@@ -17,3 +17,11 @@ def engine_game_start(task_description, give_question_and_answer):
                   f"\nLet's try again, {user_name}!")
             return
     print(f'Congratulations, {user_name}!')
+
+# Предлагаю изменить наименование, тк в файл и так называется engine,
+# соответственно в имени функции можно опустить, мне нравится твоё
+# название run_..., думаю сюда тоже обще назвать с данным словом:
+#
+# def engine_game_start(task_description, give_question_and_answer):
+# Тут же предлагаю изменить give_question_and_answer на get_...,
+# тк мы не отдаём вопрос и ответ, а получаем
