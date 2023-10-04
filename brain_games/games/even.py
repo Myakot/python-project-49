@@ -10,7 +10,7 @@ def get_question_and_answer():
 
 
 def is_even(question):
-    return True if question % 2 == 0 else return False
+    return True if question % 2 == 0 else False
 
 
 def run_even_game():
