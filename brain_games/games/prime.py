@@ -1,12 +1,6 @@
-from brain_games.consts import GAME_GRT_PRIME
-from brain_games.utils import get_random_num
+from brain_games.consts import GAME_GREET_PRIME
+from brain_games.utils import get_num
 from brain_games.engine import run_game
-
-
-def give_question_and_answer():
-    number = get_random_num()
-    correct_answer = 'yes' if is_prime(number) is True else 'no'
-    return correct_answer, number
 
 
 def is_prime(number):
@@ -16,5 +10,11 @@ def is_prime(number):
     return True
 
 
+def get_prime_question_and_result():
+    number = get_num()
+    correct_answer = 'yes' if is_prime(number) is True else 'no'
+    return correct_answer, number
+
+
 def run_prime_game():
-    run_game(GAME_GRT_PRIME, give_question_and_answer)
+    run_game(GAME_GREET_PRIME, get_prime_question_and_result)
