@@ -1,11 +1,11 @@
-from random import choice
+import random
 from brain_games.consts import GAME_GREET_CALC
 from brain_games.utils import get_num
 from brain_games.engine import run_game
 
 
 def get_random_math_sign_and_result(number1, number2):
-    sign = choice(['+', '-', '*'])
+    sign = random.choice(['+', '-', '*'])
     question = f'{number1} {sign} {number2}'
     match sign:
         case '*':
