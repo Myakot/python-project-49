@@ -17,6 +17,10 @@ Using the following commands you will install the working package:
 **make publish** Dry-executes publish command to see what's inside of it.
 **make package-install** installs the package for use of shell.
 
+###### Тут лучше инструкцию обозвать так же со словом package-...
+reinstall:
+	pip install --user --force-reinstall dist/*.whl
+
 Afterwards use any of the examples below to launch a game of your choice.
 
 ## Game launch examples

@@ -9,7 +9,9 @@ publish:
 
 package-install:
 	python3 -m pip install --user dist/*.whl
-
+# Тут лучше инструкцию обозвать так же со словом package-...
+# reinstall:
+# 	pip install --user --force-reinstall dist/*.whl
 reinstall:
 	pip install --user --force-reinstall dist/*.whl
 
