@@ -1,9 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-# Более детальное описание проекта:
-#description = "Brain games. My first ever project"
-description = "Brain games. My first ever project"
+description = "Brain games. First of the four training projects of Hexlet's course program, supervised by Rafael Mukhametshin."
 authors = ["Cherkasov Stepan <cstepan@yandex.ru>"]
 readme = "README.md"
 repository = "https://github.com/Myakot/python-project-49/"
