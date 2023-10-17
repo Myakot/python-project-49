@@ -4,7 +4,7 @@ from brain_games.engine import run_game
 
 
 def is_even(question):
-    question % 2 == 0
+    return question % 2 == 0
 
 
 def get_even_question_and_result():
