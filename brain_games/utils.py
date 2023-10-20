@@ -2,4 +2,4 @@ from random import randint
 
 
 def get_random_num():
-    return randint(10, 20)
+    return randint(2, 11)

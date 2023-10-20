@@ -11,6 +11,25 @@ def generate_progression_items():
     return seq_start, seq_step, seq_length
 
 
+# def generate_progression(start_num, step, length):
+#     progression = []
+#     for i in range(start_num, length, step):
+#         progression.append(i)
+#     return progression
+
+# а там уже вычислить как же запихнуть пропущенный элемент
+#
+# Или забегая чууть вперед (не из первого модуля), то это выражения генераторы:
+#
+#     first_num, diff = get_random_number(), get_random_number()
+#     missed_num_ind = random.randint(0, PROGRESSION_LENGTH - 1)
+#
+#     progression = ' '.join([
+#         '..' if i == missed_num_ind else str(first_num + i * diff)
+#         for i in range(PROGRESSION_LENGTH)
+#     ])
+
+
 def generate_progression():
     sequence = []
     seq_start, seq_step, seq_length = generate_progression_items()
