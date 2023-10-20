@@ -1,5 +1,5 @@
 from random import randint
 
 
-def get_num():
+def get_random_num():
     return randint(10, 101)
