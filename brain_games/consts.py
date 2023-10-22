@@ -1,5 +1,5 @@
 NUM_OF_GAMES = 3
-PROGRESSION_SEQUENCE_LENGTH = 41
+PROGRESSION_SEQUENCE_LENGTH = 12
 GAME_GREET_CALC = 'What is the result of the expression?'
 GAME_GREET_EVEN = 'Answer "yes" if the number is even, otherwise answer "no".'
 GAME_GREET_GCD = 'Find the greatest common divisor of given numbers.'
