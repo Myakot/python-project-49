@@ -18,11 +18,11 @@ Using the following commands you will install the working package:
 **make publish** Dry-executes publish command to see what's inside of it.
 **make package-install** installs the package for use of shell.
 
-Afterwards use any of the examples below to launch a game of your choice.
+Afterwards, use any of the examples below to launch a game of your choice.
 
 ## Game launch examples
 ### brain-even  
-[![asciicast](https://asciinema.org/a/5yVjkBxYDkc3L5OAfVjGYINEk.svg)](https://asciinema.org/a/5yVjkBxYDkc3L5OAfVjGYINEk)  
+[![asciicast](https://asciinema.org/a/cjvTPZIHJrp6VuWcyPAQL7zIO.svg)](https://asciinema.org/a/cjvTPZIHJrp6VuWcyPAQL7zIO)  
 ### brain-calc  
 [![asciicast](https://asciinema.org/a/HO8jujkaPaxMsTa6n6xlrUJE1.svg)](https://asciinema.org/a/HO8jujkaPaxMsTa6n6xlrUJE1)
 ### brain-gcd  
