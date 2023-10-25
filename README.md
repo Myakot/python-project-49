@@ -11,6 +11,7 @@ This is a small test project which is good-to-go to install and run 5 simple mat
 - poetry = "^1.6.1"
 
 ### How to run:
+[![asciicast](https://asciinema.org/a/cMcOpQeBcLnvFTZYmC9G32Seh.svg)](https://asciinema.org/a/cMcOpQeBcLnvFTZYmC9G32Seh)
 Using the following commands you will install the working package:
 **make install** will install poetry packages.
 **make build** will build packages for the project.
