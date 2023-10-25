@@ -24,10 +24,10 @@ Afterwards, use any of the examples below to launch a game of your choice.
 ### brain-even  
 [![asciicast](https://asciinema.org/a/cjvTPZIHJrp6VuWcyPAQL7zIO.svg)](https://asciinema.org/a/cjvTPZIHJrp6VuWcyPAQL7zIO)  
 ### brain-calc  
-[![asciicast](https://asciinema.org/a/HO8jujkaPaxMsTa6n6xlrUJE1.svg)](https://asciinema.org/a/HO8jujkaPaxMsTa6n6xlrUJE1)
+[![asciicast](https://asciinema.org/a/adzMWzxZwx94PWMNDYnih0jqL.svg)](https://asciinema.org/a/adzMWzxZwx94PWMNDYnih0jqL)
 ### brain-gcd  
-[![asciicast](https://asciinema.org/a/gmr7EBK62gAizWlMZvuMvav1Y.svg)](https://asciinema.org/a/gmr7EBK62gAizWlMZvuMvav1Y)
+[![asciicast](https://asciinema.org/a/bBXOftN7KXmNp4Heut6mcOuft.svg)](https://asciinema.org/a/bBXOftN7KXmNp4Heut6mcOuft)
 ### brain-progression  
-[![asciicast](https://asciinema.org/a/h66iVuZtR8cD0iZ6ITuPAzSLH.svg)](https://asciinema.org/a/h66iVuZtR8cD0iZ6ITuPAzSLH)
+[![asciicast](https://asciinema.org/a/PpCZU1mvKPrnCHdJs68Ihgk1Z.svg)](https://asciinema.org/a/PpCZU1mvKPrnCHdJs68Ihgk1Z)
 ### brain-prime  
-[![asciicast](https://asciinema.org/a/uFUCh15ToF9vj5hhg2YhpkZ95.svg)](https://asciinema.org/a/uFUCh15ToF9vj5hhg2YhpkZ95)
+[![asciicast](https://asciinema.org/a/5ve65IqXa6oTuweF4RjQ8ZrhR.svg)](https://asciinema.org/a/5ve65IqXa6oTuweF4RjQ8ZrhR)
