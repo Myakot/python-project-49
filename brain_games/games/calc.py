@@ -14,13 +14,13 @@ def get_random_math_sign_and_result(number1, number2):
             correct_answer = number1 - number2
         case '+':
             correct_answer = number1 + number2
-    return str(correct_answer), question
+    return correct_answer, question
 
 
 def get_math_question_and_result():
     number1, number2 = get_random_num(), get_random_num()
     correct_answer, question = get_random_math_sign_and_result(number1, number2)
-    return correct_answer, question
+    return str(correct_answer), question
 
 
 def run_calc_game():
